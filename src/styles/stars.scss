@@ -9,7 +9,7 @@
   opacity: 1;
   font-family: Roboto, sans-serif;
 
-  &--5 {
+  &--4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +26,11 @@
     border-radius: 0.5px;
   }
 
-  &--5 .stars__star:nth-child(-n + 4) {
+  &--1 .stars__star:first-child,
+  &--2 .stars__star:nth-child(-n + 2),
+  &--3 .stars__star:nth-child(-n + 3),
+  &--4 .stars__star:nth-child(-n + 4),
+  &--5 .stars__star:nth-child(-n + 5) {
     background-image: url(../images/star-active.svg);
   }
 
